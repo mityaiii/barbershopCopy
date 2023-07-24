@@ -1,0 +1,9 @@
+.short-text {
+	padding-right: 80px;
+}
+
+@media (width < 840px) {
+	.short-text {
+		width: 100%;
+	}
+}

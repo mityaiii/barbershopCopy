@@ -1,0 +1,18 @@
+.more-news {
+  padding-top: 65px;
+  width: 300px;
+}
+
+@media(width < 840px) {
+  .more-news {
+    width: 80vw;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+}
+
+@media (width < 576px) {
+  .news {
+		width: 88vw;
+	}
+}

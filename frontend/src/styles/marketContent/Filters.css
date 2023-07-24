@@ -1,0 +1,99 @@
+.filters {
+	width: 180px;
+}
+
+.filter fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filter legend {
+	font-size: 24px;
+	line-height: 30px;
+  margin-bottom: 30px;	
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.filter-option {
+	margin-bottom: 19px;
+  line-height: 18px;
+  padding-right: 1px;
+  position: relative;
+}
+
+.filter-input-checkbox + label:before,
+.filter-input-radio + label:before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(./../../imgs/checkbox.png) no-repeat;
+  vertical-align: middle;
+  position: absolute;
+  left: -40px;
+  top: -2px;	
+}
+
+.filter-input-radio + label:before {
+	background: url(././../../imgs/radio.png) no-repeat;
+}
+
+.selected label:before {
+	background-position: 0px -20px;	
+}
+
+.filter-input-checkbox:disabled + label:before,
+.filter-input-radio:disabled + label:before {
+  opacity: 0.3;
+}
+
+.filter-option .disabled {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #663d15;
+}
+
+.filter-input:disabled + label {
+	color: #000000;
+	opacity: 0.5;
+}
+
+@media (width < 1000px) {
+  .filters {
+    width: 100%;
+  }
+  .filters ul {
+    margin-left: 10px;
+  }
+}
+
+@media (width < 840px) {
+  .filter legend {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .filters fieldset {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .filters li {
+    padding-bottom: 12px;
+  }
+
+  .filters .button {
+    font-size: 1rem;
+  }
+}

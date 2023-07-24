@@ -1,0 +1,20 @@
+.custom-table-1 {
+	width: 100%;
+}
+
+.custom-table-1 td {
+	width: 50%;
+}
+
+.custom-table-1 td:last-child {
+	text-align: center;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+	padding: 10px 15px;
+	border: 2px solid #000000;
+}

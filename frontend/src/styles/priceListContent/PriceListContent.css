@@ -1,0 +1,192 @@
+.inner-page {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #000000;
+	background-color: #f9f6f3;
+	background-image: url("../../imgs/pattern-light.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.inner-page .container {
+	width: 940px;
+}
+
+.inner-page-title {
+	margin-bottom: 55px;
+}
+
+.inner-page .main-header {
+	margin-bottom: 50px;
+	background-color: #000000;
+}
+
+.inner-page .main-navigation {
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+.inner-page .main-header-logo {
+	order: 0;
+	width: 111px;
+	height: 24px;
+	padding: 23px 20px;
+}
+
+.inner-page .user-navigation {
+	margin-left: auto;
+}
+.inner-page .main-footer {
+	margin-top: 45px;
+}
+
+.page-title {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0; 
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.inner-page-title {
+	margin-bottom: 55px;
+}
+
+.breadcrumbs {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.breadcrumbs li {
+	position: relative;
+	margin-right: 42px;
+}
+
+.breadcrumbs li:last-child {
+	margin-right: 0;
+}
+
+.breadcrumbs li::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: -25px;
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.last::after {
+	background-color: transparent!important;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumbs-current {
+	color: #aba9a7;
+}
+
+.breadcrumbs-current::after {
+	display: none;
+}
+
+.inner-content .big-heading {
+	display: flex;
+	align-items: center;
+	margin-top: 55px;
+	margin-bottom: 65px;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.big-heading::before,
+.big-heading::after {
+	content: "";
+	flex-grow: 1;
+	flex-shrink: 0;
+	width: 50px;
+	height: 2px;
+	background: #000000;
+}
+
+.big-heading::before {
+	margin-right: 25px;
+}
+
+.big-heading::after {
+	margin-left: 25px;
+}
+
+@media (width < 1000px) {
+	.inner-content .big-heading {
+		font-size: 2rem;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.inner-columns {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (width < 840px) {
+	.inner-page-container {
+		padding-left: 3vw;
+	}
+
+	.short-text {
+		padding: 0;
+	}
+
+	.inner-column-left {
+		padding: 0;
+	}
+	.inner-column-right {
+		margin: 0;
+	}
+
+	.big-heading::before,
+	.big-heading::after {
+		width: 0px;
+	}
+	
+	.PriceList .container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media (width < 570px) {
+	.inner-content .big-heading {
+		font-size: 1.5rem;
+	}
+
+	.inner-columns {
+		width: 90vw;
+		margin: 0 5vw;
+	}
+
+	.breadcrumbs li {
+		display: flex;
+	}
+
+	.breadcrumbs li::after {
+		position: relative;
+		margin-top: 3px;
+	}
+}

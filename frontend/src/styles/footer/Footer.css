@@ -1,0 +1,149 @@
+.main-footer {
+	padding: 60px 0;
+	color: #ffffff;
+	border-color: #212121;
+	background-image: url('./../../imgs/pattern-dark.jpg');
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+/* .inner-page .main-footer {
+	margin-top: 45px;
+} */
+
+.main-footer .container {
+  padding: 0 10px;
+  justify-content: space-between;
+	display: flex;
+}
+
+.footer-social {
+	width: 145px;
+	text-align: center;
+}
+
+.footer-social ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 141px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+	background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000000;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.footer-contacts {
+  font-size: 1rem;
+  text-align: start;
+	width: 320px;
+	margin: 0;
+}
+
+.footer-contacts.start {
+  margin-left: 5%;
+}
+
+.footer-contacts.end {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.footer-contacts a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+	text-decoration: none;
+}
+
+@media (width < 840px) {
+	.main-footer .container {
+		position: relative;
+		display: block;
+	}
+
+	.main-footer .social-button {
+		width: 80px;
+		height: 80px;
+	}
+
+	.footer-contacts.start {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer-contacts.end {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer-contacts {
+		font-size: 1.2rem;
+		width: 80%;
+	}
+
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	.footer-social {
+		padding: 80px 0px;
+		margin-left: auto;
+    margin-right: auto;
+		width: max-content;
+	}
+
+	.footer-social ul {
+		width: max-content;
+		column-gap: 20px;
+	}
+}
+
+@media (width < 560px) {
+	.main-footer .social-button {
+		width: 50px;
+		height: 50px;
+	}
+}

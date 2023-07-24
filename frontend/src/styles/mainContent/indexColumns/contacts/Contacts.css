@@ -1,0 +1,47 @@
+.contacts {
+	width: 380px;
+}
+
+.contacts p {
+	margin: 0;
+	margin-bottom: 45px;
+}
+
+@media (width < 840px) {
+	.contacts {
+		width: 80vw;
+	}
+	.contacts .button {
+		width: 45%;
+		margin-right: 0;
+	}
+	.contacts .button:first-of-type {
+		margin-right: 10%;
+	}
+}
+
+@media (width < 570px) {
+	.contacts {
+		width: 88vw;
+	}
+
+	.contacts .button {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.contacts p {
+		margin-bottom: 25px;
+		font-size: 1rem;
+		max-width: 85vw;
+	}
+
+	.contacts.left-column {
+		display: contents;
+	}
+
+	.contacts-button {
+		width: 180px;
+		margin-bottom: 10px;
+	}
+}

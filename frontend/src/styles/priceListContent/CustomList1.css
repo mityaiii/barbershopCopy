@@ -1,0 +1,22 @@
+.custom-list-1 {
+	margin: 14px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.custom-list-1 li {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}

@@ -1,0 +1,71 @@
+.index-columns {
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px;
+	margin-bottom: 35px;
+	color: #000000;
+	background-color: #f8f5f2;
+	background-image: 
+		url("../../imgs/line.png"),
+		url("../../imgs/pattern-light.jpg");
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;
+}
+
+.index-columns h2 {
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 28px;
+	line-height: 42px;
+}
+
+@media (width < 840px) {
+	.index-columns {
+		/* padding: 40px; */
+		background-image: url("../../imgs/pattern-light.jpg");
+		margin: 0 40px;
+		margin-bottom: 20px;
+		width: max-content;
+		display: block;
+		padding: 30px 20px!important;
+	}
+
+	.index-columns section {
+		width: 100%;
+		margin-top:  auto;
+		margin-right: auto;
+	}
+
+	.index-columns section h2 {
+		text-align: center;
+		font-size: 40px;
+		line-height: 40px;
+	} 
+
+	.index-columns section li, p, a {
+		font-size: 24px;
+		line-height: 30px;
+	} 
+
+
+	.index-columns section li p {
+		padding-bottom: 12px;
+	} 
+
+	.left-column {
+		margin-bottom: 25px;
+	}
+
+	.feature-item {
+		width: 77vw;
+	}
+}
+
+@media (width < 570px) {
+	main .index-columns {
+		margin: 20px 0px;
+		width: 100vw;
+		padding: 20px;
+	}
+}

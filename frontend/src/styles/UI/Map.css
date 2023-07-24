@@ -1,0 +1,78 @@
+
+
+.modal-map {
+	position: fixed;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	width: 766px;
+	height: 561px;
+	margin-top: -280px;
+	margin-left: -390px;
+	border: 7px solid white;
+}
+
+.modal {
+	z-index: 10;
+	position: fixed;
+	display: none;
+	color: #000000;
+	background-color: #f8f3f0;
+	background-image: url("../../imgs/pattern-light.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	top: 30px;  
+	width: 32px;
+	height: 32px;
+	font-size: 0;
+	color: #000000;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	width: 24px;
+	height: 4px;
+	background-color: #5b5b5b;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+@media (width < 840px) {
+	.modal-map {
+		margin: 0;
+		margin-left: -50%;
+		max-width: 100vw;
+		max-height: 50vh;
+		top: 20%;
+	}
+
+	.modal iframe {
+		max-width: 98vw;
+		max-height: 50vh;
+	}
+}

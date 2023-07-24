@@ -1,0 +1,120 @@
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+/* .main-navigation .container {
+	display: flex;
+} */
+
+.main-navigation-wrapper {
+	width: 100%;
+	/* margin-bottom: 35px; */
+	background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: center;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	/* width: 620px; */
+	width: max-content;
+}
+
+.user-navigation {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 140px;
+}
+
+.site-navigation a,
+.user-navigation a {
+	display: block;
+	padding: 25px 20px;
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #242424;
+}
+
+.site-navigation-current {
+	position: relative;
+}
+
+.site-navigation-current a[href] {
+	pointer-events: none;
+}
+
+.site-navigation-current a:not([href]) {
+	background-color: #000000;
+}
+
+.site-navigation-current::after {
+	content: "";
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	left: 20px;
+	height: 5px;
+	background-color: #ffffff;
+}
+
+.user-navigation .login-link {
+	position: relative;
+	padding-left: 50px;
+}
+
+.login-link::before {
+	content: "";
+	position: absolute;
+	top: 27px;
+	left: 24px;
+	width: 16px;
+	height: 18px;
+	background-image: url("../../imgs/index-logo.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;  
+	opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+	opacity: 1;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+@media (width < 840px) {
+	.site-navigation {
+		font-size: 24px;
+	}
+
+	.header { 
+		
+	}
+}
